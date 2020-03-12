@@ -1,0 +1,42 @@
+\documentclass[dvipdfmx,uplatex]{jsarticle}
+\def\vector#1{\mbox{\boldmath $#1$}}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[hiresbb]{graphicx}
+\usepackage{ascmac}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{url}
+\usepackage{braket}
+\usepackage[colorlinks=true, bookmarks=true,
+bookmarksnumbered=true, bookmarkstype=toc, linkcolor=blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage[version=3]{mhchem}
+\makeatletter
+ \renewcommand{\theequation}{%
+   \thesubsection.\arabic{equation}}
+  \@addtoreset{equation}{subsection}
+\makeatother
+\title{}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+\setcounter{tocdepth}{3}
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+AtomでTeXを書いてみた。
+
+\begin{equation}
+  \int x dx = \frac{1}{2}x^2 + C
+\end{equation}
+
+
+
+\end{document}
